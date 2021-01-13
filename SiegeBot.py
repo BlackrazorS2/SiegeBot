@@ -16,7 +16,7 @@ intents.members = True
 intents.dm_messages = True
 client = commands.Bot(command_prefix='!', intents=intents) # command prefix is !
 client.remove_command('help') # removes the default help command to replace it with a custom one
-guildie = "798337362567626812"
+guildie = ""
 
 @client.event
 async def on_ready(): # as the bot boots up
