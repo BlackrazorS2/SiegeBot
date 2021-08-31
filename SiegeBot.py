@@ -44,8 +44,7 @@ def checkGuild(guild):
 async def createChannel(teamName):
     """When called, makes text and voice channels with the given team name"""
     data = reload()
-    server = client.get_guild(int(guildie))
-    #server = client.get_guild(discGuild)
+    server = client.get_guild(int(guildie)
     for cat in server.categories:
         if cat.name == "Teams":
             category = cat
@@ -58,8 +57,6 @@ async def createChannel(teamName):
         print("done\n")
     else:
         print("Category Teams already exists, no need to make a new one\n")
-    ############^ this works
-    ############v this sometimes does not
     # permissions for channels
     textOverwrites = {
         server.default_role: discord.PermissionOverwrite(read_messages=False, view_channel=False)
